@@ -38,7 +38,9 @@ function Game(config) {
   } 
 
   this.incrementLevel = function() {
-    level++;
+      level++;
+      return game.getGameLevel().label; 
+      
   }
 }
 

@@ -43,7 +43,6 @@ itemsList.forEach(item => item.addEventListener("click", () => onLetterClick(ite
 const nextStep = () => {
   number = getRandomArbitrary(game.getGameLevel().range[0], game.getGameLevel().range[1])
   const randomLetter = game.getRandomLetter();
-
   let arr = [];
   let i;
   arr.push(game.getLetterAddNumber(number));
@@ -61,16 +60,15 @@ const nextStep = () => {
 
 function onLetterClick(currentItem) {
   if(sec < 1) return;
-
   if (currentItem === game.getTrueChoise()) {
-    sec += config.TIMER
+    sec += config.TIMER ;
+    document.getElementById("lev").innerHTML = game.incrementLevel()
   } else {
     sec < config.TIMER + 1 
       ? gameOver()
       : sec -= config.TIMER;
   }
-  
-  nextStep();  
+  nextStep();
 }
 
 const gameOver = () => {
@@ -84,9 +82,9 @@ const timerInterval = setInterval(function() {
     gameOver();
     return;
   }
-
   timer.innerHTML = sec;
   sec--
 }, 1000);
 
+document.getElementById("lev").innerHTML = game.getGameLevel().label
 nextStep();

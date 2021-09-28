@@ -69,7 +69,8 @@
     
 }
 #class-item-left-top{
-    border-left: 3px solid white;
+    background-image: url(image-19199857.jpg);
+    border-right: 3px solid #ffffff;
     border-bottom: 3px solid white;
     border-radius: 0 0 120px 0;
     display: grid;
@@ -78,17 +79,13 @@
     justify-content: center;
     width: 120px;
     background-color: white;
-    
-}
-#timer{
     color: white;
-    height: 50px;
-    width: 150px;
-    display: flex;
-    justify-items: center;
-    
+    font-size: 30px;
+    font-family: Apple Chancery, cursive;
 }
+
 #class-item-left-down{
+    background-image: url(image-19199857.jpg);
     border-top: 3px solid #ffffff;
     border-left: 3px solid white;
     border-radius: 120px 0 0 0 ;
@@ -98,11 +95,14 @@
     justify-content: center;
     width: 120px;
     background-color: white ;
-    
-    
+    color: white;
+    font-size: 30px;
+    font-family: Apple Chancery, cursive;
 }
+
 #class-item-right-top{
-    border-right: 3px solid white;
+    background-image: url(image-19199857.jpg);
+    border-left: 3px solid white;
     border-bottom: 3px solid white;
     border-radius: 0 0 0 120px ;
     display: grid;
@@ -110,11 +110,13 @@
     align-items: center;
     justify-content: center;
     width: 120px;
-    /* margin-right: 115px;  */
     background-color: white ;
-    
+    color: white;
+    font-size: 30px;
+    font-family: Apple Chancery, cursive;
 }
 #class-item-right-down{
+    background-image: url(image-19199857.jpg);
     border-right: 3px solid white;
     border-top: 3px solid white;
     border-radius: 0 120px 0 0;
@@ -125,9 +127,12 @@
     width: 120px;
     margin-right: 115px;
     background-color: white;
-    
+    color: white;
+    font-size: 30px;
+    font-family: Apple Chancery, cursive;
 }
 #letter-number{
+    background-image: url(image-19199857.jpg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -142,6 +147,31 @@
     display: inline-grid;
     grid-template-columns: auto auto auto; 
     
+}
+#aaa{
+    color: white;
+    font-size: 30px;
+    font-family: Apple Chancery, cursive;
+}
+#timer{
+    height: 50px;
+    width: 120px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    font-size: 20px;
+    font-family: Apple Chancery, cursive;
+}
+#lev{
+    height: 50px;
+    width: 120px;
+    color: white;
+    font-size: 20px;
+    font-family: Apple Chancery, cursive;
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
 
 
